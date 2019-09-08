@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./fonts/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./fonts/font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" href="./plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./plugins/slick/slick.css">
+    <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./plugins/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Rosa International</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav"><a class="nav-logo" href=""><img src="./img/logo.png" alt="logo"></a>
+            <div class="nav-box">
+              <ul class="nav-menu">
+                <li><span class="nav-menu-icon"><i class="far fa-envelope-open"></i></span><a href="">support@recruting.biz</a></li>
+              </ul>
+              <ul class="nav-numbers">
+                <li><a href="">+7 (499) 944 - 46 - 23</a></li>
+                <li><a href="">+7 (499) 944 - 46 - 23</a></li>
+              </ul>
+              <ul class="nav-controls">
+                <li><a class="btn-skype" href=""><i class="fab fa-skype"></i></a></li>
+                <li><a class="btn btn-sm btn-outline-secondary fancubox" href="#register" data-fancybox data-options="{&quot;touch&quot; : false}">Зарегистрироваться</a></li>
+              </ul>
+            </div>
+            <div class="hamburger hamburger--spin js-hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="nav-aside">
+          <div class="nav-aside-wrap">
+            <div class="nav-aside-box">
+              <div class="nav-aside-box-top">
+                <div class="nav-aside-section d-flex justify-content-between align-items-center"><img src="./img/logo.png" alt="logo">
+                  <div class="nav-aside-hamburger">
+                    <div class="hamburger hamburger--spin is-active js-hamburger-menu">
+                      <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-aside-section">
+                  <ul class="costom-list">
+                    <li class="d-lg-none"><a href="http://test3.skachkov.tcl.ukrtech.info/abt.html">О нас</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Вход</a></li>
+                    <li class="d-none d-lg-block"><a href="#register" data-fancybox>Регистрация</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="nav-aside-box-bot">
+                <div class="nav-aside-section">
+                  <ul class="nav-aside-contact">
+                    <li class="nav-aside-contact-el"><span class="nav-aside-contact-icon"><i class="far fa-phone"></i></span><a href="">+7 (499) 944 - 46 - 23</a></li>
+                    <li class="nav-aside-contact-el"><span class="nav-aside-contact-icon"><i class="far fa-phone"></i></span><a href="">+7 (499) 944 - 46 - 23</a></li>
+                    <li class="nav-aside-contact-el"><span class="nav-aside-contact-icon"><i class="fab fa-skype"></i></span><a href="">live:solutions.flawlessmlm</a></li>
+                    <li class="nav-aside-contact-el"><span class="nav-aside-contact-icon"><i class="far fa-envelope-open"></i></span><a href="">support@recruting.biz</a></li>
+                  </ul>
+                </div>
+                <div class="nav-aside-section d-lg-none"><a class="btn btn-primary" href="#register" data-fancybox data-options="{&quot;touch&quot; : false}">Зарегистрироваться</a></div>
+                <div class="nav-aside-section">
+                  <div class="nav-aside-copy"><span class="nav-aside-copy-icon"><i class="fal fa-copyright"> </i></span>
+                    <div>Все права защищены<br>2005-2019</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="register" style="display:none">
+        <div class="modal-header">
+          <h4 class="modal-title">Регистрация</h4>
+          <div class="modal-sub">Уже есть аккаунт? <a href="">Войти</a></div>
+        </div>
+        <div class="modal-content">
+          <form class="auth-form" action="#">
+            <!-- Fix autocomplete-->
+            <input style="opacity: 0; position: absolute;">
+            <input type="password" style="opacity: 0; position: absolute;">
+            <!-- /Fix autocomplete-->
+            <div class="form-group has-feedback has-feedback-left is-filled">
+              <input class="form-control" type="text" autocomplete="off">
+              <label class="swim">Имя *</label>
+            </div>
+            <div class="form-group has-feedback has-feedback-left is-filled">
+              <input class="form-control" type="text" autocomplete="off">
+              <label class="swim">Логин *</label>
+            </div>
+            <div class="form-group has-feedback has-feedback-left is-filled">
+              <input class="form-control" type="text" autocomplete="off">
+              <label class="swim">E-mail *</label>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox"><span>Автомат. сгенерировать пароль и отправить на почту</span>
+            </label>
+            <div class="form-group has-feedback has-feedback-left">
+              <input class="form-control" type="password" autocomplete="off">
+              <label class="swim">Пароль *   </label>
+            </div>
+            <div class="form-group has-feedback has-feedback-left">
+              <input class="form-control" type="password" autocomplete="off">
+              <label class="swim">Повторите пароль *</label>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox"><span>Я согласен(а) c условиями<a href="#">договора конфиденциальности</a></span>
+            </label><a class="btn btn-primary btn-block" href="">Зарегистрироваться</a>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="social-block">
+            <div class="social-title"> <span>или войти через</span></div>
+            <ul class="social-list">
+              <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="" target="_blank"><i class="fab fa-vk"></i></a></li>
+              <li><a href="" target="_blank"><i class="fab fa-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <main class="content">
+        <section class="cap">
+          <div class="container">
+            <div class="cap-box">
+              <div class="cap-lft-clmn text-center text-xl-left">
+                <h1 class="title">Специализированная <br>CRM система  <br>для Вашей МЛМ команды</h1>
+                <div class="slider-cap">
+                  <div class="slider-cap-el">
+                    <p class="sub-ttl text-dark">Передача достоверных данных от дистрибьютора к дистрибьютору</p>
+                  </div>
+                  <div class="slider-cap-el">
+                    <p class="sub-ttl text-dark">Обучение и пошаговое вовлечение новичка в вашу МЛМ структуру</p>
+                  </div>
+                  <div class="slider-cap-el">
+                    <p class="sub-ttl text-dark">Все необходимые веб-инструменты для работы с командой</p>
+                  </div>
+                  <div class="slider-cap-el">
+                    <p class="sub-ttl text-dark">Экономия времени на процессе обучения участников структуры</p>
+                  </div>
+                </div>
+                <div class="cap-lft-clmn-btn-box"><a class="btn btn-primary btn-lg btn-shadow" href="" style="padding-left: 40px; padding-right: 40px;">Попробовать бесплатно</a></div>
+                <div class="d-xl-none"><a class="btn-light-outline btn btn-lg" href="https://www.youtube.com/watch?v=ryo0On1l3Uw" data-fancybox>Посмотреть как это работает</a></div>
+              </div>
+              <div class="cap-rht-clmn d-none d-xl-block">
+                <div class="spectral-wrapper">
+                  <div class="spectral-serv">
+                    <div class="spectral-row spectral-row-1">
+                      <div class="spectral-el-txt">
+                        <p>Переход по реферальной <br>ссылке, с рекламного объявления, <br>на лендинг</p>
+                      </div>
+                      <div class="spectral-icon">
+                        <div class="bg-icon_a"></div>
+                      </div>
+                    </div>
+                    <div class="spectral-row spectral-row-2">
+                      <div class="spectral-clmn spectral-clmn-lft">
+                        <div class="spectral-el-txt"> 
+                          <p>Цикл повторяется <br>с новым участником</p>
+                        </div>
+                        <div class="spectral-icon">
+                          <div class="bg-icon_g"></div>
+                        </div>
+                      </div>
+                      <div class="spectral-clmn spectral-clmn-rght">
+                        <div class="spectral-icon">
+                          <div class="bg-icon_b"></div>
+                        </div>
+                        <div class="spectral-el-txt"> 
+                          <p>Регистрация<br>на сайте</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spectral-row spectral-row-3">
+                      <div class="spectral-clmn spectral-clmn-lft">
+                        <div class="spectral-el-txt"> 
+                          <p>Настройка рекламной кампании с использованием собственной реферальной ссылки</p>
+                        </div>
+                        <div class="spectral-icon">
+                          <div class="bg-icon_d"></div>
+                        </div>
+                      </div>
+                      <div class="spectral-clmn spectral-clmn-rght">
+                        <div class="spectral-icon">
+                          <div class="bg-icon_c"></div>
+                        </div>
+                        <div class="spectral-el-txt"> 
+                          <p>Прохождение пошагового обучения</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spectral-row spectral-row-1">
+                      <div class="spectral-icon">
+                        <div class="bg-icon_e"></div>
+                      </div>
+                      <div class="spectral-el-txt"> 
+                        <p>Регистрация в основной <br>компании</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spectral-wrap">
+                    <div class="spectr-box">
+                      <div class="spectr-rect">
+                        <svg id="triangles" xmlns="http://www.w3.org/2000/svg" width="278.31" height="288" viewBox="0 0 278.31 288">
+                          <metadata>
+                            <!-- ?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?-->
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                              <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:description rdf:about=""></rdf:description>
+                              </rdf:rdf>
+                            </x:xmpmeta>
+                            <!-- ?xpacket end="w"?-->
+                          </metadata>
+                          <defs></defs>
+                          <path class="cls cls-1" id="Polygon_1" data-name="Polygon 1" d="M1167.99,384.505l-8,4.5v-9Z" transform="translate(-1107 -380)"></path>
+                          <path class="cls cls-2" id="Polygon_1_copy_12" data-name="Polygon 1 copy 12" d="M1383.03,491.352l-6.42-6.559,8.69-2.331Z" transform="translate(-1107 -380)"></path>
+                          <path class="cls cls-3" id="Polygon_1_copy_13" data-name="Polygon 1 copy 13" d="M1333.101,627.6l4.5,8h-9.01Z" transform="translate(-1107 -380)"></path>
+                          <path class="cls cls-4" id="Polygon_1_copy_15" data-name="Polygon 1 copy 15" d="M1169.52,640.594l9.18,0.1-4.5,7.8Z" transform="translate(-1107 -380)"></path>
+                          <path class="cls cls-5" id="Polygon_1_copy_14" data-name="Polygon 1 copy 14" d="M1113.64,483.99l-6.63,6.65,8.98,2.364Z" transform="translate(-1107 -380)"></path>
+                        </svg>
+                      </div>
+                      <div class="spectr-line"><img src="./img/spiral-line.png" alt="spiral"></div>
+                      <div class="spectr-zig"><img src="./img/spiral.png" alt="spiral"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spectral-link text-center"><a class="text-weight-semibold" href="https://www.youtube.com/watch?v=ryo0On1l3Uw" data-fancybox>Посмотреть как это работает</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="inform" data-graph="datagraph">
+          <div class="container-fluid container-inform">
+            <div class="js-scrollbar box">
+              <div class="inform-box">
+                <div class="inform-clmn">
+                  <div class="iform-block iform-block-a">
+                    <h3>268</h3>
+                    <p>Подключенных <br>систем</p>
+                  </div><div class="graph-container">
+<canvas class="graphick" id="totalIncome"></canvas>
+</div>
+                </div>
+                <div class="inform-clmn">
+                  <div class="iform-block iform-block-b">
+                    <h3>2 500</h3>
+                    <p>Прирост партнеров <br>за первые<br class="d-none d-md-block">полгода <span class="tooltip tooltip-orange"><i class="fal fa-question-circle"></i><span class="tooltiptext">Tooltip text</span></span></p>
+                  </div><div class="graph-container">
+<canvas class="graphick" id="totalIncome2"></canvas>
+</div>
+                </div>
+                <div class="inform-clmn">
+                  <div class="iform-block iform-block-c">
+                    <h3>692 700</h3>
+                    <p>Уже присоединились<br> к Рекрута</p>
+                  </div><div class="graph-container">
+<canvas class="graphick" id="totalIncome3"></canvas>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="inform-bloc-md d-none d-md-block">
+              <div class="row">
+                <div class="col-12">
+                  <div class="inform-col-section">
+                    <h2 class="title text-center">Работаем в сфере МЛМ более 15 лет</h2>
+                    <div class="inform-col-block d-md-flex">
+                      <div class="inform-col">
+                        <div class="inform-col-box">
+                          <div class="bg-info_col bg-info_col_a"> </div>
+                          <div class="inform-col-count-box">
+                            <div class="inform-col-count">1</div>
+                            <div class="inform-col-count-line"></div>
+                          </div>
+                          <div class="inform-col-txt">
+                            <p>Мы знаем как решить Ваши проблемы со структурой   </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inform-col">
+                        <div class="inform-col-box">
+                          <div class="bg-info_col bg-info_col_b"></div>
+                          <div class="inform-col-count-box">
+                            <div class="inform-col-count">2</div>
+                            <div class="inform-col-count-line"></div>
+                          </div>
+                          <div class="inform-col-txt">
+                            <p>  Предоставим функционал, который будет работать в вашем МЛМ бизнесе</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inform-col">
+                        <div class="inform-col-box">
+                          <div class="bg-info_col bg-info_col_c"></div>
+                          <div class="inform-col-count-box">
+                            <div class="inform-col-count">3</div>
+                            <div class="inform-col-count-line"></div>
+                          </div>
+                          <div class="inform-col-txt">
+                            <p>Поможем Вам автоматизировать процесс обучения МЛМ структуры</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inform-sm">
+              <h2 class="title text-center">Работаем в сфере МЛМ более 15 лет</h2>
+              <div class="inform-col-block js-inform-sm">
+                <div class="inform-col">
+                  <div class="inform-col-box">
+                    <div class="inform-col-count">1</div>
+                    <div class="bg-info_col bg-info_col_a"> </div>
+                    <div class="inform-col-txt">
+                      <p>Мы знаем как решить Ваши проблемы со структурой   </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="inform-col">
+                  <div class="inform-col-box">
+                    <div class="inform-col-count">2</div>
+                    <div class="bg-info_col bg-info_col_b"></div>
+                    <div class="inform-col-txt">
+                      <p>  Предоставим функционал, который будет работать в вашем МЛМ бизнесе</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="inform-col">
+                  <div class="inform-col-box">
+                    <div class="inform-col-count">3</div>
+                    <div class="bg-info_col bg-info_col_c"></div>
+                    <div class="inform-col-txt">
+                      <p>Поможем Вам автоматизировать процесс обучения МЛМ структуры</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hlrs">
+          <div class="container">
+            <div class="panel">
+              <div class="row justify-content-center">
+                <div class="col-lg-7">
+                  <h2 class="title text-center">Настоящий помощник в МЛМ бизнесе и не только</h2>
+                </div>
+                <div class="col-12">
+                  <div class="row hlrs-clmn-box">
+                    <div class="col-md-6 col-lg-4">
+                      <div class="hlrs-clmn">
+                        <div class="hlrs-count">
+                          <h2>1</h2>
+                        </div>
+                        <h4>Для владельцев <br>МЛМ компаний</h4>
+                        <p>Управляйте структурой и следите за результатами при помощи одного инструмента</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                      <div class="hlrs-clmn">
+                        <div class="hlrs-count">
+                          <h2>2</h2>
+                        </div>
+                        <h4>Для топ лидеров <br>МЛМ компаний</h4>
+                        <p>Наращивайте и обучайте команду</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                      <div class="hlrs-clmn">
+                        <div class="hlrs-count">
+                          <h2>3</h2>
+                        </div>
+                        <h4>Для <br>инфобизнесменов</h4>
+                        <p>Распространяйте свой уникальный контент</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="set">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8">
+                <h2 class="title text-center">Настройте работающий маркетинговый инструмент для себя и своей команды</h2>
+              </div>
+            </div>
+            <div class="row set-col-box">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="set-col">
+                  <div class="set-col-icon-box">
+                    <div class="bg-set bg-set_a"> </div>
+                  </div>
+                  <div class="set-col-txt">Дупликация действий поможет исключить искажение информации среди участников структуры</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="set-col">
+                  <div class="set-col-icon-box">
+                    <div class="bg-set bg-set_b"></div>
+                  </div>
+                  <div class="set-col-txt">Пошаговое обучение сделает вашу команду компетентной во всех рабочих вопросах и позволит наращивать структуру быстрее</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="set-col">
+                  <div class="set-col-icon-box">
+                    <div class="bg-set bg-set_c"></div>
+                  </div>
+                  <div class="set-col-txt">Необходимые для вашей работы веб-инструменты объединены в одном месте</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="distr">
+          <div class="container distr-wrap">
+            <div class="disrt-bg-img"><img src="./img/surface-studio.png" alt="distr-bg"></div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <h2 class="title text-center">Всего 10% дистрибьюторов достигают успеха в МЛМ бизнесе. Использование специализированной CRM системы позволит добиться  больших результатов!</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="distr-col">
+                      <div class="bg-distr bg-distr_a"></div>
+                      <div class="distr-col-txt">Обеспечьте приток новых клиентов за счет настройки платной рекламы</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="distr-col">
+                      <div class="bg-distr bg-distr_b"></div>
+                      <div class="distr-col-txt">Передавайте правильную информацию среди структуры</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="distr-col">
+                      <div class="bg-distr bg-distr_c"></div>
+                      <div class="distr-col-txt">Используйте готовые веб-инструменты для работы с командой</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="distr-col">
+                      <div class="bg-distr bg-distr_d"></div>
+                      <div class="distr-col-txt">Экономьте время на процессе обучения</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="distr-col">
+                      <div class="bg-distr bg-distr_f"></div>
+                      <div class="distr-col-txt">Работайте из любой точки мира</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="recruting">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title text-center">Возможности Рекрута</h2>
+              </div>
+              <div class="col-12">
+                <div class="recruting-lg d-none d-lg-block">
+                  <div class="row">
+                    <!-- MAIN SLIDES-->
+                    <div class="col-5 col-xxl-5">
+                      <div class="slider-nav-thumbnails">
+                        <div>
+                          <div class="slide-tabs">Воронка продаж</div>
+                          <section class="content-slider" data-id="1"> 
+                            <p>Настройка дуплицирования ваших действий на всех этапах пользовательского пути</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Настройка обучения</div>
+                          <section class="content-slider" data-id="2"> 
+                            <p>Создание маршрута пошагового вовлечения нового партнера в команду</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Реферальные ссылки</div>
+                          <section class="content-slider t" data-id="3"> 
+                            <p>Автоматизация процесса построения структуры и привязка нескольких проектов к единой структуре</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Мультилендинги</div>
+                          <section class="content-slider" data-id="4"> 
+                            <p>Использование различных тематических запросов для создания уникальных путей вовлечения</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Монетизация системы</div>
+                          <section class="content-slider" data-id="5"> 
+                            <p>Возможность дополнительного заработка на оплатах партнеров вашей структуры</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Партнерская программа</div>
+                          <section class="content-slider" data-id="6"> 
+                            <p>Дополнительный заработок для Вас и ваших партнеров за приглашение новых кандидатов в систему</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Адаптивность</div>
+                          <section class="content-slider" data-id="7"> 
+                            <p>Работа с командой и контроль структуры из любой точки мира, используя планшет, телефон или ноутбук</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Отчеты по структуре</div>
+                          <section class="content-slider" data-id="8"> 
+                            <p>Отслеживание статистики о структуре компании, ее членах и их статусах</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Доменное имя и SSL сертификат</div>
+                          <section class="content-slider" data-id="9"> 
+                            <p>Персонализация сайта за счет доменного имени и сертификата безопасности</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Пошаговое обучение</div>
+                          <section class="content-slider" data-id="10"> 
+                            <p>Дополнительная возможность заработка для Вас и вашей структуры с помощью обучающих курсов</p>
+                          </section>
+                        </div>
+                        <div>
+                          <div class="slide-tabs">Мобильное приложение</div>
+                          <section class="content-slider" data-id="11"> 
+                            <p>Все необходимые функции вашей рекрутинговой системы всегда под рукой</p>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 col-xxl-7">
+                      <div class="slider">
+                        <div data-index="1"> 
+                          <div class="slider-img"><img src="./img/include1.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="2"> 
+                          <div class="slider-img"><img src="./img/include2.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="3"> 
+                          <div class="slider-img"><img src="./img/include3.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="4"> 
+                          <div class="slider-img"><img src="./img/include4.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="5"> 
+                          <div class="slider-img"><img src="./img/include5.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="6"> 
+                          <div class="slider-img"><img src="./img/include7.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="7"> 
+                          <div class="slider-img"><img src="./img/include6.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="8"> 
+                          <div class="slider-img"><img src="./img/include8.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="9"> 
+                          <div class="slider-img"><img src="./img/include9.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="10"> 
+                          <div class="slider-img"><img src="./img/include10.jpg" alt="img"></div>
+                        </div>
+                        <div data-index="11"> 
+                          <div class="slider-img"><img src="./img/include11.jpg" alt="img"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recruting-sm d-lg-none js-recruting-sm">
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include1.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Воронка продаж</div>
+                    <div class="recruting-sm-txt">
+                      <p>Настройка дуплицирования ваших действий на всех этапах пользовательского пути</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include2.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Настройка обучения</div>
+                    <div class="recruting-sm-txt">
+                      <p>Создание маршрута пошагового вовлечения нового партнера в команду</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include3.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Реферальные ссылки</div>
+                    <div class="recruting-sm-txt">
+                      <p>Автоматизация процесса построения структуры и привязка нескольких проектов к единой структуре</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include4.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Мультилендинги</div>
+                    <div class="recruting-sm-txt">
+                      <p>Использование различных тематических запросов для создания уникальных путей вовлечения</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include5.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Монетизация системы</div>
+                    <div class="recruting-sm-txt">
+                      <p>Возможность дополнительного заработка на оплатах партнеров вашей структуры</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include7.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Партнерская программа</div>
+                    <div class="recruting-sm-txt">
+                      <p>Дополнительный заработок для Вас и ваших партнеров за приглашение новых кандидатов в систему</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include6.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Адаптивность</div>
+                    <div class="recruting-sm-txt">
+                      <p>Отслеживание статистики о структуре компании, ее членах и их статусах</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include8.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Отчеты по структуре</div>
+                    <div class="recruting-sm-txt">
+                      <p>Персонализация сайта за счет доменного имени и сертификата безопасности</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include9.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Доменное имя и SSL сертификат</div>
+                    <div class="recruting-sm-txt">
+                      <p>Персонализация сайта за счет доменного имени и сертификата безопасности</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include10.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Пошаговое обучение</div>
+                    <div class="recruting-sm-txt">
+                      <p>Дополнительная возможность заработка для Вас и вашей структуры с помощью обучающих курсов</p>
+                    </div>
+                  </div>
+                  <div class="recruting-sm-el">
+                    <div class="recruting-sm-img"><img src="./img/include11.jpg" alt="img"></div>
+                    <div class="recruting-sm-title">Мобильное приложение</div>
+                    <div class="recruting-sm-txt">
+                      <p>Все необходимые функции вашей рекрутинговой системы всегда под рукой</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section how">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title text-center">Настройте платформу один раз и избавьтесь от ряда рутинных дел</h2>
+                <p class="sub-title text-center"> Как это сделать?</p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="row how-clmn-box">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="how-clmn">
+                    <div class="how-step">1<span class="d-inline d-md-none">.  </span><span style="padding-left: 5px;">этап</span></div>
+                    <div class="how-txt"> <span class="text-weight-bold text-primary">Зарегистрируйтесь  </span> на сайте recruting.biz</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="how-clmn">
+                    <div class="how-step">2<span class="d-inline d-md-none">. </span><span style="padding-left: 5px;">этап</span></div>
+                    <div class="how-txt"> <span class="text-weight-bold text-primary">Получите бесплатно  </span> демо версию сервиса</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="how-clmn">
+                    <div class="how-step">3<span class="d-inline d-md-none">. </span><span style="padding-left: 5px;">этап</span></div>
+                    <div class="how-txt"> <span class="text-weight-bold text-primary">Свяжитесь  </span> с нашим менеджером</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="how-clmn">
+                    <div class="how-step">4<span class="d-inline d-md-none">.  </span><span style="padding-left: 5px;">этап</span></div>
+                    <div class="how-txt"> <span class="text-weight-bold text-primary">Настройте  </span> систему Рекрута под себя</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="how-clmn">
+                    <div class="how-step">5<span class="d-inline d-md-none">.  </span><span style="padding-left: 5px;">этап</span></div>
+                    <div class="how-txt"> <span class="text-weight-bold text-primary">Добавьте  </span> свой уникальный контент</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="how-clmn">
+                    <div class="how-step">6<span class="d-inline d-md-none">. </span><span style="padding-left: 5px;">этап</span></div>
+                    <div class="how-txt"> <span class="text-weight-bold text-primary">Обучайте  </span> свою структуру и приумножайте свой капитал</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about-pay">
+              <div class="row about-us align-items-center">
+                <div class="col-12 col-xl-8 col-xxl-7 text-center text-lg-left">
+                  <div class="about-us-clmn-left">
+                    <h2>Специально для Вас, мы настроим вашу маркетинговую систему <span class="d-lg-none">под ключ</span></h2>
+                    <div class="about-us-img"><img src="./img/rect-sell.png" alt="key"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-4 offset-xxl-1 text-center">
+                  <div class="about-us-clmn-right"><a class="btn btn-secondary" href="">Зарегистрироваться</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="about-company d-none d-lg-block">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="about-content">
+                    <h2 class="title">О нашей компании</h2>
+                    <p>На протяжении 15 лет, к flawlessmlm обращаются за экспертной консультацией и качественной разработкой программного обеспечения при создании МЛМ бизнеса. На сегодняшний день мы реализовали более 250 проектов в 10-ках стран мира и наш штат насчитывает более 100 опытных сотрудников. </p>
+                    <p>Постоянно общаясь с ТОП Лидерами и владельцами МЛМ компаний, мы выяснили, что они столкнулись с рядом проблем при работе со своей структурой.</p>
+                    <p>Тогда было принято решение создать систему автоматизации Рекрута, которая помогает ТОП Лидерам и Владельцам МЛМ компаний обучать участников структуры на автомате, следить за успехами своей команды, выявить на каком этапе вовлечения в структуру потенциальный партнер отказывается от регистрации в компании и многое другое.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-img"><img src="./img/copy.png" alt="about"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section partners">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title text-center">Компании наших <br class="d-md-none">клиентов</h2>
+              </div>
+            </div>
+            <div class="row partners-row d-none d-md-flex">
+              <div class="col-md-6 col-lg-3">
+                <div class="partners-clmn">
+                  <div class="partners-clmn-img"><img src="./img/partners-a.jpg" alt="partners"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="partners-clmn">
+                  <div class="partners-clmn-img"><img src="./img/partners-b.jpg" alt="partners"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="partners-clmn">
+                  <div class="partners-clmn-img"><img src="./img/partners-c.jpg" alt="partners"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="partners-clmn">
+                  <div class="partners-clmn-img"><img src="./img/partners-d.jpg" alt="partners"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 d-none d-lg-block">
+                <div class="partners-clmn"></div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="partners-clmn">
+                  <div class="partners-clmn-img"><img src="./img/partners-e.jpg" alt="partners"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="partners-clmn">
+                  <div class="partners-clmn-img"><img src="./img/partners-f.jpg" alt="partners"></div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 d-none d-lg-block">
+                <div class="partners-clmn"></div>
+              </div>
+            </div>
+            <div class="partners-slider js-patners-slider">
+              <div class="partners-el">
+                <div class="partners-img"><img src="./img/partners-a.jpg" alt="partners"></div>
+              </div>
+              <div class="partners-el">
+                <div class="partners-img"><img src="./img/partners-b.jpg" alt="partners"></div>
+              </div>
+              <div class="partners-el">
+                <div class="partners-img"><img src="./img/partners-c.jpg" alt="partners"></div>
+              </div>
+              <div class="partners-el">
+                <div class="partners-img"><img src="./img/partners-d.jpg" alt="partners"></div>
+              </div>
+              <div class="partners-el">
+                <div class="partners-img"><img src="./img/partners-e.jpg" alt="partners"></div>
+              </div>
+              <div class="partners-el">
+                <div class="partners-img"><img src="./img/partners-f.jpg" alt="partners"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section comment">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title text-center">Отзывы о нас</h2>
+              </div>
+              <div class="col-12">
+                <div class="comment-slider js-comment">
+                  <div class="comment-el">
+                    <div class="comment-el-box">
+                      <div class="comment-triangle"></div>
+                      <div class="comment-user">Александр Полевой</div>
+                      <div class="comment-sub">Основатель системы обучения онлайн-бизнесу LeadersTeam.club</div>
+                      <div class="comment-descr">В свое время я потратил много времени на поиски системы автоматизации онлайн-бизнеса, для того чтобы мне и моей команде было удобно работать в автономном режиме и дублицировать действия. Наткнувшись, по положительным<span class="dots">... </span>
+                        <div class="comment-hidden"> отзывам от знакомых, на сайт Рекрута, Я был очень рад, что наконец нашел то, что будет удовлетворять почти все мои потребности и запросы. Здесь предлагается огромное количество функционала для удобной, быстрой и эффективной работы с партнерами, переводя их на систему, совершенно не напрягаясь. Фактически это как мой "секретарь" в бизнесе – снимающий с меня огромную часть рутинной работы, высвобождая драгоценное время для Бизнеса. Поддержка работает на 5+ и всегда на связи. Я сотрудничаю с Марией и Юлией. Очень дружелюбные, всегда помогают и никогда не отказывают в помощи. Буду продолжать работать с данным сервисом.</div><a class="comment-trigger js-trigger-content" href=""><i class="far fa-chevron-down"></i></a>
+                      </div>
+                    </div>
+                    <div class="comment-user-img"><img src="./img/comment-a.png" alt="user"></div>
+                  </div>
+                  <div class="comment-el">
+                    <div class="comment-el-box">
+                      <div class="comment-triangle"></div>
+                      <div class="comment-user">Виктор Бандалет</div>
+                      <div class="comment-sub">BusinessChancePRO</div>
+                      <div class="comment-descr"> 
+                        <p>Я являюсь основателем сообщества успешных предпринимателей домашнего бизнеса BusinessChancePRO. Перед тем, как я стал сотрудничать с рекрутой, у меня было несколько вопросов, где бы найти готовое решение, или потратить десятки тысяч долларов на написание собственной.</p><span class="dots">...</span>
+                        <div class="comment-hidden">
+                          <p>Так вот, рекрута на сегодняшний день - это лучшее решение из готовых платформ, которую вы сможете заточить под себя, как для образовательного бизнеса, так и системы дубликации для МЛМ бизнеса. Благодаря рекруте, через наши образовательные программы прошло уже более 1300 предпринимателей МЛМ бизнеса с различных сетевых компаний.</p>
+                        </div><a class="comment-trigger js-trigger-content" href=""><i class="far fa-chevron-down"></i></a>
+                      </div>
+                    </div>
+                    <div class="comment-user-img"><img src="./img/comment-b.png" alt="user"></div>
+                  </div>
+                  <div class="comment-el">
+                    <div class="comment-el-box">
+                      <div class="comment-triangle"></div>
+                      <div class="comment-user">Максим Гусев</div>
+                      <div class="comment-sub">Cоздатель системы автоматизации Global Power System</div>
+                      <div class="comment-descr"> Для любого предпринимателя актуально масштабирование и автоматизация бизнеса. Благодаря платформе Рекрута я легко создал собственную бизнес систему с помощью которой построил междунарожную МЛМ сеть более чем 4000 людей<span class="dots">...</span>
+                        <div class="comment-hidden">увеличил товарообороты, помог наладить бизнес множеству людей и как следствие за 4 месяца заработал более 75000$. Теперь благодаря системе бизнес строить это одно удовольствие, все работает на полном автомате 24\7 даже когда ты спишь или отдыхаешь с семьей.
+                          <p style="margin-top: 5px">Огромная благодарность создателям этой уникальной платформы и отлаженной работе технической поддержки. Очень доволен данным сервисом! Если вы хотите вывести свой бизнес на новый, более высокий уровень, то я вам искренне рекомендую воспользоваться услугами платформы Рекрута, уверен вы будете довольны результатами. Желаю успеха и процветания в ваших делах!</p>
+                        </div><a class="comment-trigger js-trigger-content" href=""><i class="far fa-chevron-down"></i></a>
+                      </div>
+                    </div>
+                    <div class="comment-user-img"><img src="./img/comment-c.jpg" alt="user"></div>
+                  </div>
+                  <div class="comment-el">
+                    <div class="comment-el-box">
+                      <div class="comment-triangle"></div>
+                      <div class="comment-user">Марина Букина</div>
+                      <div class="comment-sub">Руководитель системы "Crowdfunding International"</div>
+                      <div class="comment-descr"> Я в сетевом бизнесе уже более 20 лет. За год наша структура достигла 11 000 человек. Когда встал вопрос, как этим управлять, я выбрала систему "Рекрута". Мне понравилась простота кабинета, работа службы поддержки. <span class="dots">...</span>
+                        <div class="comment-hidden">Благодаря системе "Рекрута" у Вас, как у руководителей, освобождается больше времени. Все технические вопросы, стратегии ведения бизнеса, расписание мероприятий - все в одном месте, партнеры могут самостоятельно изучить материал. Возможность создать несколько страниц-"воронок" помогает новичкам привлекать новых партнеров. Дополнительно Вы и ваши партнеры могут с этой системой зарабатывать деньги! Спасибо за созданный инструмент для автоматизированного ведения бизнеса.</div><a class="comment-trigger js-trigger-content" href=""><i class="far fa-chevron-down"></i></a>
+                      </div>
+                    </div>
+                    <div class="comment-user-img"><img src="./img/review3.jpg" alt="user"></div>
+                  </div>
+                  <div class="comment-el">
+                    <div class="comment-el-box">
+                      <div class="comment-triangle"></div>
+                      <div class="comment-user">Артур Гид</div>
+                      <div class="comment-sub">Руководитель проектов "MonstrBux" и "Crypto Manager"</div>
+                      <div class="comment-descr"> Для любого предпринимателя актуально масштабирование и автоматизация бизнеса. Благодаря платформе Рекрута я легко создал собственную бизнес систему с помощью которой построил междунарожную МЛМ сеть более чем 4000 людей</div>
+                    </div>
+                    <div class="comment-user-img"><img src="./img/review2.jpg" alt="user"></div>
+                  </div>
+                  <div class="comment-el">
+                    <div class="comment-el-box">
+                      <div class="comment-triangle"></div>
+                      <div class="comment-user">Марина Букина</div>
+                      <div class="comment-sub">Руководитель системы "Olimp24"</div>
+                      <div class="comment-descr"> Без системы невозможно строить и развивать поистине большой бизнес. Рассмотрев множество вариантов, мы выбрали наилучший. Рекрутинговая система компании Flawlessmlm - это мощнейший инструмент успеха! Такого в интернете вы больше не найдете! От имени команды Olimp24 хотим поблагодарить компанию за эту уникальную разработку. Вы лучшие!</div>
+                    </div>
+                    <div class="comment-user-img"><img src="./img/review4.jpg" alt="user"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="foo-top">
+          <div class="container">
+            <div class="row justify-content-lg-between">
+              <div class="col-12 col-lg-4" style="margin-bottom: 20px"><a class="foo-logo" href=""><img src="./img/logo-bot.png" alt="logo"></a>
+                <p>Рекрута - специализированная CRM система для работы с МЛМ командой</p>
+              </div>
+              <div class="col-12 col-lg-auto">
+                <h5 class="foo-label">Навигация</h5>
+                <ul class="costom-list">
+                  <li><a href="">Блог</a></li>
+                  <li><a href="">О нас</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-auto">
+                <h5 class="foo-label">Контакты</h5>
+                <ul class="contact-list">
+                  <li class="contact-item"><span class="contact-item-icon"><i class="fab fa-skype"></i></span><a href="">live:solutions.flawlessmlm</a></li>
+                  <li class="contact-item"><span class="contact-item-icon"><i class="far fa-envelope-open"></i></span><a href="">support@recruting.biz</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-auto">
+                <h5 class="foo-label d-none d-lg-block"><br></h5>
+                <ul class="contact-list">
+                  <li class="contact-item"><span class="contact-item-icon"><i class="far fa-phone"></i></span><a href="">+38 (063) 507 - 35 - 35</a></li>
+                  <li class="contact-item"><span class="contact-item-icon"><i class="far fa-phone"></i></span><a href="">+7 (499) 944 - 46 - 23</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foo-bot">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <p>Все права защищены 2005-2019</p>
+              </div>
+              <div class="col-auto">
+                <p>Разработка  <a href="">- FlawlessMLM</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="../plugins/slick/slick.min.js"></script>
+    <script src="../plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../plugins/scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="../plugins/echarts.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

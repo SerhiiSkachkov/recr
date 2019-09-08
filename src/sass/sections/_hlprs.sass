@@ -1,0 +1,78 @@
+.hlrs
+  padding: 50px 0px
+  background: url(../img/comment_bg.jpg) center right no-repeat/auto
+  background-position: 100% 26%
+  @media(min-width: 768px)
+    padding: 90px 0px
+  .title
+      display: none
+  &-clmn-box> [class*=col-]
+    margin-bottom: 10px
+    @media(min-width: 992px)
+      margin-bottom: 0px
+    &:last-child
+      margin-bottom: 0px
+      .hlrs-clmn
+        border-bottom: none
+  &-clmn
+    padding: 20px 0px 20px
+    border-bottom: 1px solid #eeeff2
+    height: 100%
+    h4
+      font-size: 20px
+      line-height: 24px
+      color: #6c66ff
+      margin-bottom: 10px
+    p 
+      font-size: 18px
+      color: #46454b
+  &-count
+    display: none
+
+@media(min-width: 768px)
+  .hlrs
+    padding: 70px 0px
+    background: url(../img/figures.jpg) center center no-repeat/ contain
+    .title
+      display: block
+      margin-bottom: 60px
+    &-clmn-box> [class*=col-]
+      margin-bottom: 20px
+    &-clmn
+      border-bottom: none
+      padding-left: 30px
+      padding-top: 10px
+      padding-bottom: 10px
+      border-left: 1px solid #eeeff2
+      h4
+        font-size: 26px
+        line-height: 34px
+        color: #292935
+      p 
+        font-size: 20px
+        max-width: 270px
+        line-height: 30px
+    &-count
+      display: block
+      width: 75px
+      position: relative
+      margin-bottom: 20px
+      &:before
+          content: ''
+          display: block
+          position: absolute
+          width: 43px
+          height: 85px
+          right: -5px
+          border-left: 1px solid #292935
+          background-color: white
+          transform: rotate(40deg)
+          top: 0px
+      h2
+        color: #6c66ff
+        font-size: 75px
+        font-weight: bold
+        height: 75px
+        width: 75px
+        line-height: 50px
+        text-align: center

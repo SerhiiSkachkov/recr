@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="/img/favicon.png" type="image/png")
+        link(rel="stylesheet" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" href="./plugins/slick/slick-theme.css")
+        link(rel="stylesheet" href="./plugins/slick/slick.css")
+        link(rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css")
+        link(rel="stylesheet" href="./plugins/scrollbar/jquery.mCustomScrollbar.min.css")
+        link(rel='stylesheet' href='css/styles.min.css')
+        title Rosa International
+    body
+        .main-wrapper
+            include components/header.pug
+            main.content
+                include  sections/cap.pug
+                include  sections/inform.pug
+                include  sections/distr.pug  
+                include  sections/recr.pug  
+                include  sections/how.pug  
+                include  sections/about.pug  
+                include  sections/partners.pug  
+                include  sections/comment.pug  
+            include  components/footer.pug              
+        include components/script.pug

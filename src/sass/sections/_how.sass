@@ -1,0 +1,76 @@
+.how
+    padding: 40px 0px
+    background: url('../img/bg-mob.jpg') center top no-repeat/100%
+    // background-position: 100% 100%
+    .title
+        margin-bottom: 20px
+    .sub-title
+        margin-bottom: 30px
+        font-size: 20px
+    .panel
+        padding: 30px 20px
+    &-step
+      color: #46454b
+      width: 20px
+      margin-right: 10px
+      font-size: 24px
+      font-weight: bold
+      span
+        display: none
+    &-clmn
+      display: flex
+    &-txt 
+        font-size: 16px
+        line-height: 24px
+        color: #46454b
+        span
+            font-size: 18px
+            font-family: 'Futura PT'
+    &-clmn-box> [class*=col-]
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0px
+
+@media(min-width: 768px)
+    .how
+        background: #f8f8ff
+        .panel
+            background-color: transparent
+            box-shadow: none
+            padding: 0px
+        &-clmn
+            height: 100%
+            padding: 20px 20px
+            flex-direction: column
+            background: #fff
+            border-radius: 5px
+        &-step
+            width: auto
+            margin-bottom: 15px
+            font-size: 30px
+            span
+                display: inline-block
+                font-size: 16px
+        &-txt 
+            font-size: 21px
+            line-height: 30px
+            span
+                font-size: 24px
+        &-clmn-box> [class*=col-]
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 30px
+        .title
+            margin-bottom: 50px
+        .sub-title
+            margin-bottom: 50px
+
+@media(min-width: 992px)
+    .how
+
+        .panel
+            background-color: transparent
+            box-shadow: none
+            padding: 0px
+        &-clmn
+            padding: 30px 30px

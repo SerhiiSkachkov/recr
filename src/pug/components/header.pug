@@ -1,0 +1,125 @@
+header.header
+    .container
+        nav.nav
+            a.nav-logo(href="")
+                img(src="./img/logo.png", alt="logo")
+            .nav-box
+                ul.nav-menu
+                    li
+                        span.nav-menu-icon
+                            i.far.fa-envelope-open
+                        a(href="") support@recruting.biz
+                ul.nav-numbers
+                    li
+                        a(href="") +7 (499) 944 - 46 - 23
+                    li
+                        a(href="") +7 (499) 944 - 46 - 23
+                ul.nav-controls
+                    li
+                        a.btn-skype(href="")
+                            i.fab.fa-skype
+                    li
+                        a.btn.btn-sm.btn-outline-secondary.fancubox(href="#register" data-fancybox data-options='{"touch" : false}') Зарегистрироваться
+            .hamburger.hamburger--spin.js-hamburger
+                .hamburger-box
+                    .hamburger-inner
+    .nav-aside
+        .nav-aside-wrap
+            .nav-aside-box
+                .nav-aside-box-top
+                    .nav-aside-section.d-flex.justify-content-between.align-items-center
+                        img(src="./img/logo.png", alt="logo")
+                        .nav-aside-hamburger
+                            .hamburger.hamburger--spin.is-active.js-hamburger-menu
+                                .hamburger-box
+                                    .hamburger-inner
+                    .nav-aside-section
+                        ul.costom-list
+                            li.d-lg-none
+                                a(href="http://test3.skachkov.tcl.ukrtech.info/abt.html") О нас
+                            li
+                                a(href="") FAQ
+                            li
+                                a(href="") Блог
+                            li
+                                a(href="") Вход
+                            li.d-none.d-lg-block
+                                a(href="#register" data-fancybox) Регистрация
+                .nav-aside-box-bot
+                    .nav-aside-section
+                        ul.nav-aside-contact
+                            li.nav-aside-contact-el
+                                span.nav-aside-contact-icon
+                                    i.far.fa-phone
+                                a(href="") +7 (499) 944 - 46 - 23
+                            li.nav-aside-contact-el
+                                span.nav-aside-contact-icon
+                                    i.far.fa-phone
+                                a(href="") +7 (499) 944 - 46 - 23
+                            li.nav-aside-contact-el
+                                span.nav-aside-contact-icon
+                                    i.fab.fa-skype
+                                a(href="") live:solutions.flawlessmlm
+                            li.nav-aside-contact-el
+                                span.nav-aside-contact-icon
+                                    i.far.fa-envelope-open
+                                a(href="") support@recruting.biz
+                    .nav-aside-section.d-lg-none
+                        a.btn.btn-primary(href="#register" data-fancybox data-options='{"touch" : false}') Зарегистрироваться
+                    .nav-aside-section
+                        .nav-aside-copy
+                            span.nav-aside-copy-icon
+                                i.fal.fa-copyright 
+                            div Все права защищены
+                                br
+                                | 2005-2019
+
+#register(style="display:none")
+    .modal-header
+        h4.modal-title Регистрация
+        .modal-sub Уже есть аккаунт? 
+            a(href="") Войти
+    .modal-content
+        form.auth-form(action='#')
+            // Fix autocomplete
+            input(style='opacity: 0; position: absolute;')
+            input(type='password', style='opacity: 0; position: absolute;')
+            // /Fix autocomplete
+            .form-group.has-feedback.has-feedback-left.is-filled
+              input.form-control(type='text', autocomplete='off')
+              label.swim Имя *
+            .form-group.has-feedback.has-feedback-left.is-filled
+              input.form-control(type='text', autocomplete='off')
+              label.swim Логин *
+            .form-group.has-feedback.has-feedback-left.is-filled
+              input.form-control(type='text', autocomplete='off')
+              label.swim E-mail *
+            label.checkbox
+              input(type='checkbox')
+              span Автомат. сгенерировать пароль и отправить на почту
+            .form-group.has-feedback.has-feedback-left
+              input.form-control(type='password', autocomplete='off')
+              label.swim Пароль *   
+            .form-group.has-feedback.has-feedback-left
+              input.form-control(type='password', autocomplete='off')
+              label.swim Повторите пароль *
+            label.checkbox
+              input(type='checkbox')
+              span
+                | Я согласен(а) c условиями
+                a(href='#') договора конфиденциальности
+            a.btn.btn-primary.btn-block(href="") Зарегистрироваться
+    .modal-footer
+        .social-block
+            .social-title 
+                span или войти через
+            ul.social-list
+                li
+                  a(href='', target='_blank')
+                    i.fab.fa-facebook-f
+                li
+                  a(href='', target='_blank')
+                    i.fab.fa-vk
+                li
+                  a(href='', target='_blank')
+                    i.fab.fa-google

@@ -1,0 +1,69 @@
+.about
+  padding: 30px 0px 40px
+  background: url('../img/bg-mob.jpg') center bottom no-repeat/100%
+
+.about-us
+  padding: 40px 0px
+  margin-left: 0px
+  margin-right: 0px
+  color: white
+  border-radius: 5px
+  background: url('../img/rec.jpg') center center no-repeat/cover
+  &-clmn-left
+    position: relative
+    margin-bottom: 20px
+  &-img
+    display: none
+      
+@media(min-width: 768px)
+  .about
+    padding: 80px 0px
+    .title
+      margin-bottom: 30px
+
+@media(min-width: 992px)
+  .about
+    background: url('../img/about-bg.png') center top no-repeat/cover
+    padding: 80px 0px
+    &-pay
+      margin-bottom: 70px
+    &-img img
+      border-radius: 5px
+    &-company
+      padding-top: 50px
+    &-content
+      padding-right: 20px
+      p 
+        margin-bottom: 10px
+        font-size: 16px
+        color: #46454b
+        &:last-child
+            margin-bottom: 0px
+  .about-us
+    padding: 60px 0px
+    &-img
+      display: block
+      position: absolute
+      right: 0px
+      top: 20px
+    &-clmn-left
+      padding-left: 30px
+    &-clmn-right
+      .btn
+          padding: 20px 45px
+          font-size: 22px
+          font-weight: 400
+          border-radius: 35px
+
+@media(min-width: 1200px)
+  .about
+  
+
+@media(min-width: 1440px)
+  .about-content
+      padding-left: 30px
+      padding-right:  30px
+      p 
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 25px

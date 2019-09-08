@@ -1,0 +1,46 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="/img/favicon.png" type="image/png")
+        link(rel="stylesheet" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" href="./plugins/slick/slick-theme.css")
+        link(rel="stylesheet" href="./plugins/slick/slick.css")
+        link(rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css")
+        link(rel='stylesheet' href='css/styles.min.css')
+        title Rosa International
+    body.abt-
+        .main-wrapper
+            include components/header.pug
+            main.content
+                section.section.abt
+                    .row
+                        .col-12
+                            h2.title.text-center О нас
+                        .col-12(style="padding-left: 0px; padding-right: 0px;")
+                            .abt-slider
+                                .abt-el
+                                    img(src="../img/abt.jpg", alt="abt")
+                                .abt-el
+                                    img(src="../img/abt.jpg", alt="abt")
+                                .abt-el
+                                    img(src="../img/abt.jpg", alt="abt")
+                                .abt-el
+                                    img(src="../img/abt.jpg", alt="abt")
+                            .abt-content
+                    .container
+                        .row
+                            .col-12
+                                h2 Коротко о нашей компании
+                                p   На протяжении 15 лет, к flawlessmlm обращаются за экспертной консультацией и качественной разработкой программного обеспечения при создании МЛМ бизнеса. На сегодняшний день мы реализовали более 250 проектов в 10-ках стран мира и наш штат насчитывает более 100 опытных сотрудников.
+
+                                p Постоянно общаясь с ТОП Лидерами и владельцами МЛМ компаний, мы выяснили, что они столкнулись с рядом проблем при работе со своей структурой.
+
+                                p Тогда было принято решение создать систему автоматизации Рекрута, которая помогает ТОП Лидерам и Владельцам МЛМ компаний обучать участников структуры на автомате, следить за успехами своей команды, выявить на каком этапе вовлечения в структуру потенциальный партнер отказывается от регистрации в компании и многое другое            
+
+            include  components/footer.pug              
+        include components/script.pug
